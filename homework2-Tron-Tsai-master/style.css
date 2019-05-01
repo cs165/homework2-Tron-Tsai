@@ -1,0 +1,189 @@
+/* TODO(you): Write the CSS to finish the assignment! */
+
+/**
+  NOTE TO STUDENT:
+  Please do not modify this file!
+  Please add your CSS to style.css instead: This will help the TAs grade your
+  homework because your style edits are all in one place.
+**/
+
+article {
+  margin: auto;
+  width: 700px;
+}
+
+#author {
+  font-size: 14px;
+}
+
+body {
+  color: #222222;
+  font-family: 'Proxima Nova', 'Helvetica', 'Arial', sans-serif;
+  font-size: 18px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 18px 0;
+}
+
+header h1 {
+  font-size: 32px;
+}
+
+header {
+  display: flex;
+  border-bottom: 1px solid #cccccc;
+  height: 80px;
+}
+
+header div,
+header h1 {
+  display: flex;
+  flex-grow: 1;
+}
+
+header div,
+header div span,
+header h1 {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+}
+
+header div {
+  justify-content: flex-end;
+}
+
+header div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background-color: #ffee00;
+  height: 50px;
+  width: 50px;
+  font-weight: bold;
+  margin: 0 3px;
+  transform: rotate(-30deg);
+}
+
+header h1 {
+  color: #ee3322;
+  font-family: 'Helvetica', sans-serif;
+  justify-content: flex-start;
+  margin: 0;
+}
+img {
+  max-width:100%;
+  height:auto;
+}
+.choice-grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+ img.checkbox {
+  margin-top: 5px;
+  height: 20px;
+  width: 20px;
+}
+.flexitem{
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  width:32.5%;
+  border-color: #dcdcdc;
+  border:1px;
+  margin-left: 2px;
+  margin-right: 2px;
+  margin-top:20px;
+  margin-bottom:20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.flexitem-check{
+ background-color: #cfe3ff;
+}
+.flexitem-check .checkbox{
+  content:url("images/checked.png");
+}
+.flexitem-nocheck{
+  opacity: 0.6;
+}
+.flexitem-nocheck .checkbox{
+  content:url("images/unchecked.png");
+}
+
+
+p {
+  flex-wrap: wrap;
+  margin: 18px 0;
+}
+
+.question-name {
+  align-items: center;
+  background-image: url('./images/background.gif');
+  display: flex;
+  height: 425px;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.question-name h1 {
+  background-color: rgba(255,255,255, 0.9);
+  color: black;
+  font-family: 'Pangolin', 'Trebuchet MS', cursive;
+  font-size: 60px;
+  padding: 10px;
+  max-width: 75%;
+}
+@media screen and (max-width:700px)
+{
+  article {
+    width: 95%;
+  }
+}
+@media screen and (max-width:500px)
+{
+  .flexitem{
+    width: 49%;
+  }
+}
+.end{
+  margin-top:40px;
+  margin-bottom:20px;
+  display: block;
+  text-align: center;
+  justify-content: center;
+  width:700px;
+}
+#finaltitle{
+  font-size: 24px;
+  font-weight: bold;
+  padding-top:20px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:18px;
+
+}
+#finalend{
+  font-size: 16px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-bottom:18px;
+}
+.gogogo{
+  background-color: #cecece;
+  width: 95%;
+  margin: 20px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 18px;
+}
+
+.gogogo:hover{
+  background-color: #e0e0e0;
+}
